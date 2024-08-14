@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <com.elyeproj.annotationexperiment.TestLottieView
+                android:id="@+id/test_lottie_view_1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:scaleType="matrix"
+                android:background="@color/colorPrimary" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/star_icon_1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+        <com.elyeproj.annotationexperiment.TestLottieView
+            android:id="@+id/test_lottie_view_2"
+            android:scaleType="matrix"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/star_icon_2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.elyeproj.annotationexperiment.TestLottieView
+            android:id="@+id/test_lottie_view_3"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="matrix"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.elyeproj.annotationexperiment.TestLottieView
+            android:id="@+id/test_lottie_view_4"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="matrix"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
