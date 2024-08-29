@@ -20,7 +20,7 @@
             android:layout_height="match_parent"
             android:layout_width="match_parent">
 
-            <com.elyeproj.annotationexperiment.TestLottieView
+            <com.elyeproj.annotationexperiment.TestWebpView
                 android:id="@+id/test_lottie_view_1"
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
@@ -42,7 +42,7 @@
             android:layout_height="match_parent"
             android:layout_width="match_parent">
 
-        <com.elyeproj.annotationexperiment.TestLottieView
+        <com.elyeproj.annotationexperiment.TestWebpView
             android:id="@+id/test_lottie_view_2"
             android:scaleType="matrix"
             tools:background="@color/colorAccent"
@@ -65,7 +65,7 @@
         android:weightSum="2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <com.elyeproj.annotationexperiment.TestLottieView
+        <com.elyeproj.annotationexperiment.TestWebpView
             android:id="@+id/test_lottie_view_3"
             android:layout_margin="10dp"
             android:layout_gravity="center_horizontal"
@@ -75,7 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
-        <com.elyeproj.annotationexperiment.TestLottieView
+        <com.elyeproj.annotationexperiment.TestWebpView
             android:id="@+id/test_lottie_view_4"
             android:layout_margin="10dp"
             android:layout_gravity="center_horizontal"

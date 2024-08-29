@@ -3,15 +3,12 @@ package com.elyeproj.annotationexperiment;
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Matrix
-import android.graphics.Rect
 import android.util.AttributeSet
-import android.util.Log
 import com.airbnb.lottie.LottieAnimationView
 import com.airbnb.lottie.LottieComposition
 import com.airbnb.lottie.LottieCompositionFactory
 import com.airbnb.lottie.LottieDrawable
 import com.airbnb.lottie.LottieListener
-import com.airbnb.lottie.LottieTask
 
 
 /**
@@ -37,22 +34,24 @@ class TestLottieView  : LottieAnimationView {
 
     fun init(index : Int){
         this.index = index
-        setAnimation(LOADING_LOTTIE_FILE)
-        playAnimation()
-        repeatMode = LottieDrawable.RESTART
-        repeatCount = LottieDrawable.INFINITE
+//        setAnimation(LOADING_LOTTIE_FILE)
+//        playAnimation()
+//        repeatMode = LottieDrawable.RESTART
+//        repeatCount = LottieDrawable.INFINITE
 
         // 加载动画文件
-        val task = LottieCompositionFactory.fromAsset(context, LOADING_LOTTIE_FILE)
-        task.addListener(object : LottieListener<LottieComposition>{
-            override fun onResult(result: LottieComposition?) {
-                    val result = result ?: return
-                    val bounds = result.getBounds()
-                    resourceWidth = bounds.width().toFloat()
-                    resourceHeight = bounds.height().toFloat()
-                   invalidate()
-            }
-        })
+//        val task = LottieCompositionFactory.fromAsset(context, LOADING_LOTTIE_FILE)
+//        task.addListener(object : LottieListener<LottieComposition>{
+//            override fun onResult(result: LottieComposition?) {
+//                    val result = result ?: return
+//                    val bounds = result.getBounds()
+//                    resourceWidth = bounds.width().toFloat()
+//                    resourceHeight = bounds.height().toFloat()
+//                   invalidate()
+//            }
+//        })
+
+
 
 
         //        setImageDrawable(context.getDrawable(R.drawable.bg_ugc_create_placeholder))
@@ -61,7 +60,7 @@ class TestLottieView  : LottieAnimationView {
 //         bitmap = BitmapFactory.decodeResource(resources, R.drawable.bg_ugc_create_placeholder)
 
 
-//        setImageDrawable(context.getDrawable(R.drawable.test_image))
+        setImageDrawable(context.getDrawable(R.drawable.demo01))
 
         drawable?.let { // 确保 Drawable 已设置边界
             drawable.setBounds(0, 0, it.intrinsicWidth, it.intrinsicHeight)
@@ -98,8 +97,16 @@ class TestLottieView  : LottieAnimationView {
     }
 
 
-    companion object{
-        private const val LOADING_LOTTIE_FILE = "lottie/create_bot_avatar_loading.json"
+    companion object {
+        //        private const val LOADING_LOTTIE_FILE = "lottie/create_bot_avatar_loading.json"
+//        private const val LOADING_LOTTIE_FILE = "lottie/ic_create_bot_lottie.json"
+//        private const val LOADING_LOTTIE_FILE = "lottie/ai_generate_loading_sparkles.json"
+//        private const val LOADING_LOTTIE_FILE = "lottie/realtime_call_speaking.json"
+//        private const val LOADING_LOTTIE_FILE = "lottie/test1.json"
+//        private const val LOADING_LOTTIE_FILE = "lottie/loading_new.json"
+
+        private const val LOADING_LOTTIE_FILE = "drawable/loading.webp"
+
     }
 
 }
